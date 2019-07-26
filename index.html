@@ -14,12 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/w3css/w3.css">
+    <script src="assets/javascript/showHideInputField.js"> </script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+
 
 
     <div class="container">
@@ -29,46 +33,61 @@
 
             <div class="col-100">
                 <h1>CorrectPay</h1>
-
-
             </div>
-            <div class="col-100" id="menu">
-                <div class="row">
-                    <div class="col-12" id="menu">
-                        &nbsp;
 
-                    </div>
-                    <div class="col-12" id="menu">
-                        Home
+            <div class='w3-row '>
+                <div class='w3-container  w3-black'>
 
-                    </div>
-                    <div class="col-12" id="menu">
-                        New Customer
+                    <a href='home.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small'
+                        style='margin-right:30px;margin-left:6px'>
+                        Home</a>
+                    <a href='newCustomerWarning.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small'
+                        style='margin-right:30px;'>New Customer</a>
 
-                    </div>
-                    <div class="col-12" id="menu">
-                        Exchange Rates
+                    <a href='exchangeRatesView.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small'
+                        style='margin-right:30px;'>Exchange Rates</a>
+                    <a href='estimateYourCost.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small'
+                        style='margin-right:30px;'>Estimate Your Cost</a>
 
-                    </div>
-                    <div class="col-12" id="menu">
-                        Estimate Your Cost
-                    </div>
-                    <div class="col-12" id="menu">
-                        FAQ
+                    <a href='faqs.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small'
+                        style='margin-right:30px;'>FAQ</a>
+                    <a href='contactUs.php' class='w3-bar-item w3-button w3-hover-aqua w3-hide-small '
+                        style='margin-right:30px;'>Contact Us</a>
 
-                    </div>
-                    <div class="col-12" id="menu">
-                        Contact Us
 
-                    </div>
-
+                    <a href='javascript:void(0)' class='w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium'
+                        onclick='showHideMainMenu()'>&#9776;</a>
 
 
                 </div>
 
 
-
             </div>
+
+            <div class='w3-row '>
+                <div id='tiger' class='w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium'>
+
+                    <a href='home.php' class='w3-bar-item w3-button w3-hover-aqua' style='margin-right:50px;'>
+                        Home</a>
+                    <a href='newCustomerWarning.php' class='w3-bar-item w3-button w3-hover-aqua'
+                        style='margin-right:50px;'>New Customer</a>
+
+                    <a href='exchangeRatesView.php' class='w3-bar-item w3-button w3-hover-aqua'
+                        style='margin-right:50px;'>Exchange Rates</a>
+                    <a href='estimateYourCost.php' class='w3-bar-item w3-button w3-hover-aqua'
+                        style='margin-right:50px;'>Estimate Your Cost</a>
+
+                    <a href='faqs.php' class='w3-bar-item w3-button w3-hover-aqua' style='margin-right:50px;'>FAQ</a>
+                    <a href='contactUs.php' class='w3-bar-item w3-button w3-hover-aqua'
+                        style='margin-right:50px;'>Contact Us</a>
+
+                </div>
+            </div>
+
+
+
+
+
 
         </div>
         <div class="row">
@@ -81,7 +100,7 @@
 
     </div>
 
-    <script></script>
+    <script src="assets/javascript/showHideInputField.js"> </script>
 </body>
 
 </html>
